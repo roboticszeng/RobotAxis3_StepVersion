@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"robot_v2_master_control\startup_stm32f103xb.o"
+"robot_v2_master_control\main.o"
+"robot_v2_master_control\gpio.o"
+"robot_v2_master_control\tim.o"
+"robot_v2_master_control\usart.o"
+"robot_v2_master_control\stm32f1xx_it.o"
+"robot_v2_master_control\stm32f1xx_hal_msp.o"
+"robot_v2_master_control\stm32f1xx_hal_gpio_ex.o"
+"robot_v2_master_control\stm32f1xx_hal_tim.o"
+"robot_v2_master_control\stm32f1xx_hal_tim_ex.o"
+"robot_v2_master_control\stm32f1xx_hal.o"
+"robot_v2_master_control\stm32f1xx_hal_rcc.o"
+"robot_v2_master_control\stm32f1xx_hal_rcc_ex.o"
+"robot_v2_master_control\stm32f1xx_hal_gpio.o"
+"robot_v2_master_control\stm32f1xx_hal_dma.o"
+"robot_v2_master_control\stm32f1xx_hal_cortex.o"
+"robot_v2_master_control\stm32f1xx_hal_pwr.o"
+"robot_v2_master_control\stm32f1xx_hal_flash.o"
+"robot_v2_master_control\stm32f1xx_hal_flash_ex.o"
+"robot_v2_master_control\stm32f1xx_hal_exti.o"
+"robot_v2_master_control\stm32f1xx_hal_uart.o"
+"robot_v2_master_control\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Robot_v2_master_control\Robot_v2_master_control.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Robot_v2_master_control.map" -o Robot_v2_master_control\Robot_v2_master_control.axf

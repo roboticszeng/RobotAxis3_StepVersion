@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: s RoboticsZeng, s, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\RoboticsZeng\Documents\STM32_NEW_0827\L6_robot_v2\Robot_v2_master_control\MDK-ARM\Robot_v2_master_control.uvprojx
+Project File Date:  10/22/2022
+
+<h2>Output:</h2>
+Build target 'Robot_v2_master_control'
+compiling main.c...
+compiling gpio.c...
+compiling tim.c...
+compiling usart.c...
+../Core/Src/usart.c(249): warning:  #550-D: variable "cmdSend" was set but never used
+      static uint8_t *cmdSend;
+../Core/Src/usart.c(306): warning:  #177-D: variable "cmdSend" was declared but never referenced
+      uint8_t cmdSend[15];
+../Core/Src/usart.c(307): warning:  #177-D: variable "cmdJog" was declared but never referenced
+      uint8_t *cmdReturn, *cmdJog;
+../Core/Src/usart.c(311): warning:  #177-D: variable "j" was declared but never referenced
+      int i, j;
+../Core/Src/usart.c(403): warning:  #177-D: variable "theta" was declared but never referenced
+      double theta;
+../Core/Src/usart.c: 5 warnings, 0 errors
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+linking...
+Program Size: Code=12940 RO-data=788 RW-data=68 ZI-data=1876  
+FromELF: creating hex file...
+"Robot_v2_master_control\Robot_v2_master_control.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\RoboticsZeng\Documents\STM32_NEW_0827\L6_robot_v2\Robot_v2_master_control\MDK-ARM\RTE
+  d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
